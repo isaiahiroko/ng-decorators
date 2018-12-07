@@ -121,6 +121,46 @@
           }
         }
       }
+    },
+    "ng-decorators": {
+      "root": "projects/ng-decorators",
+      "sourceRoot": "projects/ng-decorators/src",
+      "projectType": "library",
+      "prefix": "io",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-decorators/tsconfig.lib.json",
+            "project": "projects/ng-decorators/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ng-decorators/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-decorators/src/test.ts",
+            "tsConfig": "projects/ng-decorators/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-decorators/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-decorators/tsconfig.lib.json",
+              "projects/ng-decorators/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ng-decorators-app"
