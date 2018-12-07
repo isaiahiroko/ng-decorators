@@ -1,6 +1,6 @@
 {
   "name": "@isaiahiroko/ng-decorators",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A collection of common decorators for use in angular applications.",
   "author": {
     "name": "Isaiah Iroko",

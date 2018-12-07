@@ -7,11 +7,11 @@ A collection of common decorators for use in angular applications.
 
 ## @Default()
 
-A property metadata, mearnt to be a companion of the popular angular @Input() metadata.
+A property decorator, mearnt to be a companion of the popular angular @Input() decorator.
 
 ## @Log()
 
-A propert metadata
+A propert decorator
 
 ## Install
 
