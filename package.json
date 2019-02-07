@@ -2,7 +2,7 @@
   "name": "@isaiahiroko/ng-decorators",
   "keywords": ["Angular", "Decorator", "Input"],
   "description": "A collection of common decorators for use in angular applications.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": {
     "name": "Isaiah Iroko",
     "email": "isaiahiroko@gmail.com"
