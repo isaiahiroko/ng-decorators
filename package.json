@@ -1,0 +1,19 @@
+{
+  "name": "@isaiahiroko/ng-decorators",
+  "keywords": ["Angular", "Decorator", "Input"],
+  "description": "A collection of common decorators for use in angular applications.",
+  "version": "0.0.4",
+  "author": {
+    "name": "Isaiah Iroko",
+    "email": "isaiahiroko@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isaiahiroko/ng-decorators"
+  },
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "license": "MIT"
+}
