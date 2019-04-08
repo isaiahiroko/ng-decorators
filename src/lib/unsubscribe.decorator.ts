@@ -1,10 +1,10 @@
 
 // usage @Unsubscribe()
-export function Unsubscribe (exceptions = []) {
-  return function (constructor) {
+export function Unsubscribe (exceptions = []): ClassDecorator {
+  return function (constructor: any) {
     const original = constructor.prototype.ngOnDestroy
 
-    constructor.prototype.ngOnDestroy = function () {
+    constructor.prototype.ngOnDestroy = function (...args: any[]) {
       for (let prop in this) {
         const property = this[prop]
         if (!exceptions[prop]) {
@@ -13,7 +13,7 @@ export function Unsubscribe (exceptions = []) {
           }
         }
       }
-      original && typeof original === 'function' && original.apply(this, arguments)
+      original && typeof original === 'function' && original.apply(this, args)
     }
   }
 }

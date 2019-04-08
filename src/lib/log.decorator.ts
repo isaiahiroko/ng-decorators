@@ -11,7 +11,7 @@ export function Log(exceptions: string[] = [], isProduction: boolean = false): C
       for(let prop in this) {
         const member = this[prop]
         if (!exceptions[prop]) {
-          this[prop] = function (...args) {
+          this[prop] = function (...args: any[]) {
             console.info(`%c ${constructor.name} - ${prop}`, `color: #4CAF50; font-weight: bold`, ...args)
             member && member.apply(this, args)
           }
